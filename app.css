@@ -576,9 +576,11 @@ i {
         display: none;
     }
     
+    /*
     .section_about_container {
         height: 75vh;
     }
+    */
 
     .section_skills_container {
         height: 1200px;
