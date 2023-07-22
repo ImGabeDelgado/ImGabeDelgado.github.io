@@ -11,7 +11,12 @@
 </head>
 <body>
     <header>
-        <h3>Gabe-Delgado</h3>
+        <h3 class="brand-name">Gabe-Delgado</h3>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
         <nav>
             <ul class="nav_links">
                 <li><a href="#about">About</a></li>
@@ -31,7 +36,6 @@
                 <h1>I'M GABE DELGADO</h1>
                 <p>Welcome to my Website</p>
             </div>
-            <img src="Images/back4.jpg">
         </div>
 
         <div class="section_about_container">
@@ -214,7 +218,7 @@
     });
 
     const showOptions = {
-        threshold: 0.75,
+        threshold: 0.25,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -228,6 +232,13 @@
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
+
+    const toggleButton = document.getElementsByClassName("toggle-button")[0];
+    const navbarLinks = document.getElementsByClassName("nav_links")[0];
+
+    toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+    });
 
 </script>
 
