@@ -157,7 +157,7 @@ header {
 
 .container {
     background-color: #282a2d;
-    background-image: url(Images/back4.jpg);
+    background-image: url(../Images/back4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
